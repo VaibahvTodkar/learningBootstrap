@@ -1,52 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
+
+    <link rel="icon" type="image/x-icon" href="/imeages/logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .logo {
+            height: 40px;
+            width: 40px;
+            margin-right: 20px;
+            
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+    <header class="sticky-top">
+        <!-- <div class="sticky-top"> -->
+            <nav class="navbar navbar-expand-lg bg-primary border-bottom border-body " data-bs-theme="dark">
+                <div class="container">
+                    <a href="nav-bar.html">
+                        <img class="logo img-fluid" src="imeages/logo.jpg" alt="Logo">
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                
+                    <a class="navbar-brand text-white h1" href="nav-bar.html">Vaibhav Todkar</a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="nav-bar.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Project
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
+                                    <li><a class="dropdown-item" href="#">Java</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li> -->
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-secondary  position-relative ">
+                                    Active
+                                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                      <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                  </button>
+                            </li>
+                        </ul>
+    
+    
+                    </div>
+                </div>
+            </nav>
+        <!-- </div> -->
+    </header>
+
+
+    <!-- main section start -->
+    <main>
+        <!-- slider open  -->
+        <section mt-5>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="400">
+                        <img src="imeages/banner1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="400">
+                        <img src="imeages/banner2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="400">
+                        <img src="imeages/banner3.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="400">
+                        <img src="imeages/banner4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="400">
+                        <img src="imeages/banner5.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+
+
+
+        </section>
+        <!-- slider close -->
+
+
+
+        <!-- short info open -->
+        <section>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="imeages/bird.jpg" alt="Bird">
+                    </div>
+
+                    <div class="col-md-6">
+                        <h1 class="text-center">ABC Bird</h1>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In sapiente necessitatibus rem
+                            voluptate nemo, sequi ipsa qui expedita iste pariatur sed esse architecto, voluptatem quas,
+                            quidem mollitia. Ea, unde cupiditate. Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Ex, optio vitae. Illo quam, dolorum incidunt fugiat voluptates aspernatur sint dolorem
+                            itaque velit neque illum tenetur cupiditate debitis adipisci harum temporibus.
+                        </p>
+                        <a href="about.html" class="d-flex justify-content-center"><input
+                                class="btn btn-primary text-center" type="button" value="Read More"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- short info close -->
+
+
+        <!-- frequently asked question open -->
+        <section>
+            <div class="container  mt-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Frequently asked questions</h3>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is this portfolio about?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This portfolio showcases my professional journey, skills, projects, and achievements</strong> in [your fields of expertise, e.g., Python, .NET development, AI, etc.].
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How can I contact you?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <pre>
+                                            You can contact me via:
+                                            Email: todkar2711@gmail.com
+                                             Phone: +91 7387202273
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Accordion Item #4
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate via CSS transitions. You
+                                        can modify any of this with custom CSS or overriding our default variables. It's
+                                        also worth noting that just about any HTML can go within the
+                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>    
+
+                        <div class="col-md-6">
+                            <h3>
+                                Progress Bar
+                            </h3>
+                            <div class="progress mb-4" role="progressbar" aria-label="Animated striped example"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                                </div>
+                            </div>
+
+                            
+                              <div class="progress mb-4" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped bg-danger" style="width: 25%"></div>
+                              </div>
+                              
+
+                              <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                              </div>
+                              <div class="progress mb-4" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                              </div>
+
+
+                              <div class="progress mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 25%">25%</div>
+                              </div>
+
+                        </div>
+                        
+                </div>
+        </section>
+
+        <!-- frequently asked question close -->
+
+        <!-- card and model section open  -->
+        <section class="bg-primary">
+
+            <div class="container mt-4 mb-4 pb-4">
+                <div class="row">
+                    <h1 class="text-center mb-2 text-white">Products</h1>
+                    <div class="col-md-3">
+                        <div class="card" >
+                            <img src="imeages/bird.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Bird</h5>
+                              <p class="card-text">Birds are a group of warm-blooded vertebrates constituting the class Aves (Latin: [ˈaveːs]), characterised by feathers, </p>
+                              <!-- <a href="#" class="btn btn-primary">Know More</a> -->
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#birdone">
+                                Know More
+                              </button>
+
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" >
+                            <img src="imeages/dog.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Dog</h5>
+                              <p class="card-text">The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the wolf. Also called the domestic dog, it was selectively   </p>
+                              <!-- <a href="#" class="btn btn-primary">Know More</a> -->
+
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dogone">
+                                Know More
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" >
+                            <img src="imeages/bird.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Bird</h5>
+                              <p class="card-text">Birds are a group of warm-blooded vertebrates constituting the class Aves (Latin: [ˈaveːs]), characterised by feathers, toothless </p>
+                              <!-- <a href="#" class="btn btn-primary">Know More</a> -->
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#birdtwo">
+                                Know More
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" >
+                            <img src="imeages/dog.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Dog</h5>
+                              <p class="card-text">The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the wolf. Also called the domestic  </p>
+                              <!-- <a href="#" class="btn btn-primary">Know More</a> -->
+
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dogtwo">
+                                Know More
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal  1-->
+<div class="modal fade " id="birdone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Bird</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="imeages/bird1.jpeg" alt="Bird" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Breaking Records for the Birds</h1>
+                            <p>
+                                Each year we think we’ve reached the ceiling in terms of the numbers of people who will spend at least 15 minutes (usually more) watching, celebrating, and reporting their birds for GBBC—and each year you surprise us! Collectively, we found 7,920 species of the world’s known species. Hundreds of countries and subregions came together to share bird sightings. Thank you to everyone who shared in the joy of birds with us! We devote this summary of the 2024 global four-day event to you. Be proud of all we have accomplished, together.
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal  1 close-->
+   
+
+   
+
+           <!-- Modal  2-->
+<div class="modal fade " id="dogone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Bird</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="imeages/dog1.webp" alt="Dog" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Dog</h1>
+                            <p>
+                                The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the wolf. Also called the domestic dog, it was selectively bred from an extinct population of wolves during the Late Pleistocene by hunter-gatherers. The dog was the first species to be domesticated by humans, over 14,000 years ago and before the development of agriculture. Experts estimate that due to their long association with humans, dogs have gained the ability to thrive on a starch-rich diet that would be inadequate for other canids.
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal  2 close-->
+
+
+           <!-- Modal  3-->
+           <div class="modal fade " id="birdtwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Bird</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row m-5">
+                            <div class="col-md-4">
+                                <img class="img-fluid" src="imeages/bird.jpg" alt="Bird">
+                            </div>
+                            <div class="col-md-8 text-center alien-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptate ratione laboriosam id repellendus dolore maiores blanditiis nam, quis corrupti molestiae autem commodi recusandae, nostrum placeat natus assumenda eligendi minus.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis perspiciatis alias quidem, mollitia delectus id aperiam repellendus quos sunt illum atque nulla doloribus inventore voluptas. Laborum nam aperiam eveniet totam?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
               </div>
             </div>
-          </nav>
-    </header>
+          </div>
+        
+           <!-- Modal  3 close-->
+
+           
+           <!-- Modal  4-->
+<div class="modal fade " id="dogtwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Dog</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                              
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                              </div>
+                              
+                              <div class="mb-3">
+                                <label for="basic-url" class="form-label">Your vanity URL</label>
+                                <div class="input-group">
+                                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                </div>
+                                <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+                              </div>
+                              
+                              <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text">.00</span>
+                              </div>
+                              
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                              </div>
+                              
+                              <div class="input-group">
+                                <span class="input-group-text">With textarea</span>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                              </div>
+                            
+                            </div>
+                    </div>   
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal  4 close-->
+
+
+        </section>
+        <!-- card and model section close  -->
+
+
+    </main>
+    <!-- main section close -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
